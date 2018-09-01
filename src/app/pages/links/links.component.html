@@ -1,3 +1,8 @@
-<p>
-  links works!
-</p>
+<div class="container">
+  <app-link-item *ngFor="let user of [1,2,3,4]"></app-link-item>
+    <mat-paginator [length]="length"
+                  [pageSize]="pageSize"
+                  [pageSizeOptions]="pageSizeOptions"
+                  (page)="pageEvent = $event">
+    </mat-paginator>
+</div>

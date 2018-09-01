@@ -1,0 +1,12 @@
+@import '~src/assets/scss/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+}

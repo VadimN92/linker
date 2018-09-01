@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <div class="container header">
+        <a routerLink="/" class="logo">Linker</a>
+
+        <div>
+            <button mat-button [matMenuTriggerFor]="menu">Hello, username</button>
+            <mat-menu #menu="matMenu">
+              <button routerLink="/links" mat-menu-item>Links</button>
+              <button routerLink="/login" mat-menu-item>Log out</button>
+            </mat-menu>
+        </div>
+    </div>
+</mat-toolbar>
